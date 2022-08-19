@@ -10,6 +10,7 @@ html{
     width: 100vw;
     height: 100vh;
     font-family: 'Noto Serif HK', serif;
+    background: #f3f3f3;
 
     
 }
@@ -81,7 +82,6 @@ footer div{
     margin: 0 auto;
     height: 100vh;
     width: 100vw;
-    background: #ECE1D4;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -112,11 +112,11 @@ footer div{
 }
 
 .info-content span{
-    color: #ADAC9A;
+    color: #3B656F;
 }
 
 button{
-    margin-left: 15rem;
+    margin-left: 9.5rem;
     font-size: 1.2rem;
     background: #2F4858;
     color: #fff;
@@ -131,7 +131,6 @@ button:hover{
 }
 
 #about{
-    background: #BCCBD6;
     width: 100vw;
     height: 100vh;
 }
@@ -141,7 +140,7 @@ button:hover{
     padding-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
-    color: #fff;
+    color: #6E682D
 }
 
 .all-cards{
@@ -219,6 +218,7 @@ button:hover{
     margin-top: 4rem;
     margin-left: 3rem;
     text-align: center;
+    color: #6E682D;
 }
 
 .mis-redes span{
@@ -228,9 +228,6 @@ button:hover{
 .instagram{
     transition: .2s;
 }
-
-
-
 
 .mis-redes a{
     text-decoration: none;
@@ -242,7 +239,56 @@ button:hover{
     margin-left: 1rem;
 }
 
-.contacto{
+#contacto{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+}
+
+.encabezado-contacto h2{
+    padding-top: 6rem;
+    text-align: center;
+    color: #6E682D;
+    font-size: 2rem;
+}
+
+.formulario{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.formulario input{
+    margin-bottom: 1rem;
+    background-color: transparent;
+    padding: .6rem;
+    border-radius: .5rem;
+    color: #232323;
+}
+
+.formulario textarea{
+    margin-bottom: 1rem;
+    background-color: transparent;
+    padding: .6rem;
+    border-radius: .5rem;
+    color: #232323;
+}
+
+.formulario button{
+    margin-top: 1.5rem;
+    position: relative;
+    left: 2rem;
+    width: 70px;
+}
+
+.container-contacto{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.container-contacto h4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #6E682D;
 }
