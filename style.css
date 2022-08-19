@@ -9,10 +9,14 @@
 html{
     width: 100vw;
     height: 100vh;
+    font-family: 'Noto Serif HK', serif;
+
+    
 }
 
 body{
-    font-family: 'Noto Serif HK', serif;}
+    font-family: 'Noto Serif HK', serif;
+}
 
 .menu{
     display:flex;
@@ -135,7 +139,7 @@ button:hover{
 .about h1{
     padding-top: 8rem;
     padding-bottom: 2rem;
-    margin-left: 3rem;
+    text-align: center;
     font-size: 2rem;
     color: #fff;
 }
@@ -197,9 +201,9 @@ button:hover{
 }
 
 .card .back p{
-    font-size: 17px;
+    font-size: 12px;
     margin: .5rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     letter-spacing: 2px;
 }
 
@@ -214,11 +218,19 @@ button:hover{
 .mis-redes{
     margin-top: 4rem;
     margin-left: 3rem;
+    text-align: center;
 }
 
 .mis-redes span{
     font-size: 1.5rem;
 }
+
+.instagram{
+    transition: .2s;
+}
+
+
+
 
 .mis-redes a{
     text-decoration: none;
