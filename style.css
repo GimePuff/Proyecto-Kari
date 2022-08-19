@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Noto Serif HK', serif;}
+
+.menu{
+    display:flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #f3f3f3ff;
+}
+
+.navbar{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2F4858;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 99999999;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+footer{
+    width: 100vw;
+    background-color: #2F4858; 
+    color: #fff;
+    font-family: 'Noto Serif HK', serif;
+}
+
+footer div{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.brand h2{
+    color: #fff;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.wrapper{
+    width: 100vw;
+}
+
+.menu a:hover{
+    color: #ADAC9A;
+}
+
+.wrapper span{
+    color: #D7D7A8;
+}
+
+
+#home{
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    background: #ECE1D4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.img-fluid{
+    margin-left: 4rem;
+    width: 50%;
+}
+
+.info-content{
+    margin: 0 auto;
+}
+
+.descrip{
+    max-width: 400px;
+    text-align:center;
+}
+
+.info-content h1{
+    color: #6E682D;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.info-content p{
+    padding-bottom: 1rem;
+}
+
+.info-content span{
+    color: #ADAC9A;
+}
+
+button{
+    margin-left: 15rem;
+    font-size: 1.2rem;
+    background: #2F4858;
+    color: #fff;
+    border: none;
+    padding: .4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #3B656F;
+}
+
+#about{
+    background: #BCCBD6;
+    width: 100vw;
+    height: 100vh;
+}
+
+.about h1{
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.all-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    position: relative;
+    width: 420px;
+    height: 240px;
+    margin: .5rem;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+}  
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.card .front h3{
+    font-size: 17px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card .back p{
+    font-size: 17px;
+    margin: .5rem;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.mis-redes{
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+.mis-redes span{
+    font-size: 1.5rem;
+}
+
+.mis-redes a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    position: relative;
+    left: -14.2rem;
+    top: 3rem;
+    margin-left: 1rem;
+}
+
+.contacto{
+    width: 100vw;
+    height: 100vh;
+}
